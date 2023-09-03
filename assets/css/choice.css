@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100vw; }
+
+.container {
+  background-color: #3498db;
+  border-radius: 10px;
+  padding: 1rem;
+  color: white; }
+  .container .textaria {
+    border: none;
+    width: 20rem;
+    font-size: 1.2rem;
+    background-color: deepskyblue;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: 600; }
+    .container .textaria:focus {
+      border: none;
+      outline-color: transparent; }
+  .container .tags {
+    padding: 1rem; }
+    .container .tags .tag {
+      background-color: white;
+      color: red;
+      font-weight: 600;
+      padding: .5rem;
+      border-radius: 7px;
+      letter-spacing: .9px;
+      text-transform: uppercase;
+      margin-right: .5rem; }
+      .container .tags .tag.highlight {
+        background-color: red;
+        color: white;
+        border: none;
+        outline-color: transparent; }
+
+.footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  background-color: white;
+  z-index: 100; }
+  .footer .copyright__text {
+    display: flex;
+    align-items: center;
+    font-size: 20px; }
+    .footer .copyright__text svg {
+      height: 2vh;
+      width: 2vw;
+      fill: red;
+      margin: 0 -1px; }
+      @media (max-width: 574px) {
+        .footer .copyright__text svg {
+          height: 4vh;
+          width: 4vw;
+          margin: 0 5px; } }
+    .footer .copyright__text a {
+      color: #3498db;
+      text-decoration: none;
+      padding: 0 0.2vw; }
+      .footer .copyright__text a:hover {
+        color: red; }
